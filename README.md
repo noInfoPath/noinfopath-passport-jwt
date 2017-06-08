@@ -1,9 +1,6 @@
-
+This was initially forked from themikenicholson/passport-jwt to enable dynamic secretOrKey. There is already an open pull request that has not been accepted from gfnork/passport-jwt.
 
 # passport-jwt
-
-[![Build Status](https://travis-ci.org/themikenicholson/passport-jwt.svg?branch=master)](https://travis-ci.org/themikenicholson/passport-jwt)
-[![Code Climate](https://codeclimate.com/github/themikenicholson/passport-jwt/badges/gpa.svg)](https://codeclimate.com/github/themikenicholson/passport-jwt)
 
 A [Passport](http://passportjs.org/) strategy for authenticating with a
 [JSON Web Token](http://jwt.io).
@@ -31,7 +28,7 @@ extracted from the request or verified.
   signature.
 
 * `jwtFromRequest` (REQUIRED) Function that accepts a request as the only
-  parameter and returns either the JWT as a string or *null*. See 
+  parameter and returns either the JWT as a string or *null*. See
   [Extracting the JWT from the request](#extracting-the-jwt-from-the-request) for
   more details.
 * `issuer`: If defined the token issuer (iss) will be verified against this
@@ -82,7 +79,7 @@ possible the JWT is parsed from the request by a user-supplied callback passed i
 `jwtFromRequest` parameter.  This callback, from now on referred to as an extractor,
 accepts a request object as an argument and returns the encoded JWT string or *null*.
 
-#### Included extractors 
+#### Included extractors
 
 A number of extractor factory functions are provided in passport-jwt.ExtractJwt. These factory
 functions return a new extractor configured with the given parameters.
@@ -103,7 +100,7 @@ functions return a new extractor configured with the given parameters.
 ### Writing a custom extractor function
 
 If the supplied extractors don't meet your needs you can easily provide your own callback. For
-example, if you are using the cookie-parser middleware and want to extract the JWT in a cookie 
+example, if you are using the cookie-parser middleware and want to extract the JWT in a cookie
 you could use the following function as the argument to the jwtFromRequest option:
 
 ```
