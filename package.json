@@ -1,6 +1,6 @@
 {
   "name": "noinfopath-passport-jwt",
-  "version": "0.0.2",
+  "version": "2.1.0",
   "description": "Passport authentication strategy using JSON Web Tokens",
   "main": "./lib",
   "scripts": {
